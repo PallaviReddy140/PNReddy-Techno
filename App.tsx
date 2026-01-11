@@ -1,23 +1,23 @@
 
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import TrustIndicators from './components/TrustIndicators';
-import ChairmanMessage from './components/ChairmanMessage';
-import About from './components/About';
-import AcademicApproach from './components/AcademicApproach';
-import Activities from './components/Activities';
-import GalleryHighlights from './components/GalleryHighlights';
-import AdmissionsCTA from './components/AdmissionsCTA';
-import Footer from './components/Footer';
-import AboutPage from './pages/AboutPage';
-import AcademicsPage from './pages/AcademicsPage';
-import FacilitiesPage from './pages/FacilitiesPage';
-import ContactPage from './pages/ContactPage';
-import StaffPage from './pages/StaffPage';
-import GalleryPage from './pages/GalleryPage';
-import { fetchGalleryFromCloud } from './services/cloudService';
-import { galleryItems as localGallery, GalleryItem } from './data/galleryData';
+import Navbar from './components/Navbar.tsx';
+import Hero from './components/Hero.tsx';
+import TrustIndicators from './components/TrustIndicators.tsx';
+import ChairmanMessage from './components/ChairmanMessage.tsx';
+import About from './components/About.tsx';
+import AcademicApproach from './components/AcademicApproach.tsx';
+import Activities from './components/Activities.tsx';
+import GalleryHighlights from './components/GalleryHighlights.tsx';
+import AdmissionsCTA from './components/AdmissionsCTA.tsx';
+import Footer from './components/Footer.tsx';
+import AboutPage from './pages/AboutPage.tsx';
+import AcademicsPage from './pages/AcademicsPage.tsx';
+import FacilitiesPage from './pages/FacilitiesPage.tsx';
+import ContactPage from './pages/ContactPage.tsx';
+import StaffPage from './pages/StaffPage.tsx';
+import GalleryPage from './pages/GalleryPage.tsx';
+import { fetchGalleryFromCloud } from './services/cloudService.ts';
+import { galleryItems as localGallery, GalleryItem } from './data/galleryData.ts';
 
 const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<'home' | 'about' | 'academics' | 'facilities' | 'contact' | 'staff' | 'gallery'>('home');
